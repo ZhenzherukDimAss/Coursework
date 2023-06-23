@@ -240,16 +240,6 @@ class HumanTarget : public AbstractTarget
 public:
 	HumanTarget() : AbstractTarget(30, 21)
 	{
-		matrix = new std::string * [targetLength];
-		for (int i = 0; i < targetLength; i++)
-		{
-			matrix[i] = new std::string[targetWidth];
-			for (int j = 0; j < targetWidth; j++)
-			{
-				matrix[i][j] = " ";
-			}
-		}
-
 		std::string target[] = {
 			"....,,,......;77*,.....,,,....",
 			"..:;;;;;:,..?7887#:..:;;;;;:,.",
